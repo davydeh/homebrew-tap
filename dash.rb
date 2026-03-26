@@ -5,20 +5,20 @@
 class Dash < Formula
   desc "Project dev process dashboard TUI"
   homepage "https://github.com/davydeh/dash"
-  version "0.2.0"
+  version "0.3.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/davydeh/dash/releases/download/v0.2.0/dash_0.2.0_darwin_amd64.tar.gz"
-    sha256 "4de0884ffa60693efa7fe08d1090ed1deb64a105b39b5a7b95b2d70d38dd3f71"
+    url "https://github.com/davydeh/dash/releases/download/v0.3.0/dash_0.3.0_darwin_amd64.tar.gz"
+    sha256 "248ca18e320c8feeadcd1c96c28f8f9700ea7e32e8bd4ba1ae741c9a1f2191ad"
 
     define_method(:install) do
       bin.install "dash"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/davydeh/dash/releases/download/v0.2.0/dash_0.2.0_darwin_arm64.tar.gz"
-    sha256 "22e3ed04646d081e75c4376b7eea4dd3a214a91d4949db4715898ec7b36ef0ab"
+    url "https://github.com/davydeh/dash/releases/download/v0.3.0/dash_0.3.0_darwin_arm64.tar.gz"
+    sha256 "7430169907a95bef2c26c120a3ca40c9fa8bd5947e5c563684e34f45f31dab8c"
 
     define_method(:install) do
       bin.install "dash"
